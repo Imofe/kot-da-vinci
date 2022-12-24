@@ -8,11 +8,21 @@ body {
     width: 100%;
 }
 
-/* HEADER */
-
-.main-header {
+header {
     background-color: #84CAFF;
 }
+
+button[type="submit"] {
+    background-color: #1570EF;
+    border: 0;
+
+    color: #FFF;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+/* HEADER */
 
 .main-nav {
     display: flex;
@@ -28,6 +38,11 @@ body {
 .logo {
     display: flex;
     align-items: center;
+}
+
+a.logo {
+    color: #112B66;
+    text-decoration: none;
 }
 
 .logo-name {
@@ -88,7 +103,7 @@ body {
     line-height: 75px;
 }
 
-.main-login input {
+input {
     width: 100%;
     height: 72px;
 
@@ -99,14 +114,16 @@ body {
     font-size: 32px;
     text-align: center;
     color: #112B66;
+
+    margin: 0 0 61px;
 }
 
-.main-login input::placeholder {
+input::placeholder {
     opacity: .75;
 }
 
-.main-login .login {
-    margin: 0 0 61px;
+.last-input-in-list {
+    margin: 0;
 }
 
 .main-login form button {
@@ -114,14 +131,6 @@ body {
 
     width: 267px;
     height: 55px;
-
-    background-color: #1570EF;
-    border: 0;
-
-    color: #FFF;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
 }
 
 /* ABOUT */
@@ -180,7 +189,7 @@ div.screen {
 
 /* FOOTER */
 
-footer {
+.main-footer {
     padding-top: 55px;
     padding-bottom: 220px;
     background-color: #84CAFF;
@@ -216,4 +225,47 @@ footer {
 
 .footer-nav-item:last-child {
     margin-right: 0;
+}
+
+/* REGISTRATION ===================================== */
+
+.pages-header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 70px;
+}
+
+.pages-header .logo {
+    margin-left: 28px;
+    width: 266px;
+}
+
+.registration {
+    max-width: 1300px;
+    margin: 0 auto 85px;
+    border: 1px solid #DCDCDC;
+}
+
+.registration h2 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #DCDCDC;;
+}
+
+.registration form {
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+.registration form input {
+    margin-bottom: 45px;
+}
+
+.registration form button {
+    display: block;
+    width: 268px;
+    height: 72px;
+    margin: 0 auto 75px;
 }
