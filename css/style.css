@@ -394,7 +394,7 @@ div.screen {
     border-radius: 10px;
 }
 
-.variants h1 {
+.variants h1, .variant h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 82px;
@@ -438,4 +438,97 @@ div.screen {
 
 .variants_list-item a:active {
     opacity: .5;
+}
+
+/* VARIANT ========================================================= */
+
+.variant {
+    max-width: 1680px;
+    margin: 30px auto 180px;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+.variant-tasks {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000;
+}
+
+.variant-tasks p {
+    margin: 30px auto;
+}
+
+.variant-tasks img {
+    display: block;
+    margin: 50px auto;
+}
+
+.variant-tasks input {
+    max-width: 560px;
+    height: 66px;
+}
+
+.variant-tasks form {
+    display: flex;
+    margin-bottom: 35px;
+    height: 66px;
+}
+
+.check-answer__button {
+    width: 250px;
+    height: 66px;
+    margin-left: 20px;
+
+    background-color: #53B1FD;
+
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+    line-height: 47px;
+    border: 0;
+}
+
+.variant-task {
+    border-bottom: 3px solid #84CAFF;
+}
+
+.variant-task:last-child {
+    border: 0;
+    margin-bottom: 170px;
+}
+
+.variant-task a {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 200px;
+
+    color: #000;
+    text-decoration: underline;
+}
+
+.task-wrapper {
+    max-width: 1540px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.task-wrapper:before {
+    position: absolute;
+    left: -40px;
+    font-size: 40px;
+    content: "1.";
+}
+
+.expression {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+
+.medium {
+    font-weight: 500;
 }

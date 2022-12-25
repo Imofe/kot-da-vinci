@@ -1,7 +1,7 @@
-const submitButton = document.querySelector('.registration button[type="submit"]');
+const submitButton = document.querySelector('.registration form');
 const a = document.querySelector('.registration a');
 
-submitButton.addEventListener('click', (evt) => {
+submitButton.addEventListener('submit', (evt) => {
     console.log('jopa');
     evt.preventDefault()
     a.click();
