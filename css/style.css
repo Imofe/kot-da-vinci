@@ -1,11 +1,15 @@
 body {
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 60px;
     color: #112B66;
     text-decoration: none;
 
     width: 100%;
+}
+
+main {
+    background-color: #fff;
 }
 
 header {
@@ -96,7 +100,7 @@ a.logo {
     align-items: center;
 }
 
-.main-login h2 {
+.main-login h1 {
     margin: 0 0 25px;
     font-weight: 700;
     font-size: 64px;
@@ -232,6 +236,7 @@ div.screen {
 .pages-header {
     padding-top: 17px;
     padding-bottom: 17px;
+    padding-right: 15px;
     margin-bottom: 70px;
 }
 
@@ -240,13 +245,55 @@ div.screen {
     width: 266px;
 }
 
+.pages-header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    gap: 54px;
+
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.user-info img {
+    border-radius: 50%;
+}
+
+.pages-header-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info-happiness {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.user-info-happiness__amount {
+    display: inline-block;
+}
+
+.user-info-happiness__level {
+    width: 300px;
+    height: 20px;
+    background-color: #DDF5FF;
+    border-radius: 10px;
+}
+
 .registration {
     max-width: 1300px;
     margin: 0 auto 85px;
     border: 1px solid #DCDCDC;
+    border-radius: 10px;
 }
 
-.registration h2 {
+.registration h1 {
     text-align: center;
     margin-top: 35px;
     margin-bottom: 30px;
@@ -268,4 +315,127 @@ div.screen {
     width: 268px;
     height: 72px;
     margin: 0 auto 75px;
+}
+
+.registration form a {
+    text-decoration: none;
+}
+
+/* VARIANTS =========================================================*/
+
+.variants_types {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.variants_types_list {
+    display: flex;
+
+    max-width: 1050px;
+}
+
+.variants_types_list-item {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    max-width: 330px;
+    height: 140px;
+    border: 5px solid #53B1FD;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+
+    margin-right: 25px;
+}
+
+.variants_types_list-item.active {
+    border: 5px solid #008cff;
+}
+
+.variants_types_list-item:last-child {
+    margin-right: 0;
+}
+
+.variants_types_list-item.numbers:before {
+    display: inline-block;
+    width: 54px;
+    height: 48px;
+    margin-left: 24px;
+    margin-right: 18px;
+
+    content: url("../img/variants_list_numbered.svg");
+}
+
+.variants_types_list-item.themes:before {
+    display: inline-block;
+    width: 54px;
+    height: 48px;
+    margin-left: 24px;
+    margin-right: 18px;
+
+    content: url("../img/variants_list_themes.svg");
+}
+
+.variants_types_list-item.prepared:before {
+    display: inline-block;
+    width: 54px;
+    height: 48px;
+    margin-left: 24px;
+    margin-right: 18px;
+
+    content: url("../img/variants_list_prepared.svg");
+}
+
+.variants {
+    max-width: 1550px;
+    margin: 30px auto 660px;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+.variants h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+    font-family: 'Open Sans', "Arial", sans-serif;
+
+    text-align: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.variants_list {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+
+    margin: 115px 56px 250px 56px;
+}
+
+.variants_list-item a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #fff;
+    width: 215px;
+    height: 190px;
+
+    background-color: #53B1FD;
+    border-radius: 10px;
+}
+
+.variants_list-item a:hover {
+    opacity: .7;
+}
+
+.variants_list-item a:active {
+    opacity: .5;
 }
