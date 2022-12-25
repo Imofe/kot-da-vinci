@@ -8,34 +8,41 @@
     <title>Кот да Винчи - регистрация</title>
 </head>
 <body>
-    <header class="pages-header">
-        <a class="logo" href="index.html">
-            <img class="logo-img" src="img/logo.svg" alt="Логотип сайта Кот да Винчи">
-            <h1 class="logo-name">Кот да Винчи</h1>
-        </a>
-    </header>
-    <article class="registration">
-        <h2>Регистрация</h2>
-        <form action="/" method="POST" name="registration">
-            <input name="login" type="text" placeholder="Логин">
-            <input name="password" type="password" placeholder="Пароль">
-            <input name="email" type="email" placeholder="Email">
-            <input name="surname" type="text" placeholder="Фамилия">
-            <input name="name" type="text" placeholder="Имя">
-            <input name="patronymic" type="text" placeholder="Отчество">
-            <input name="city" type="text" placeholder="Город">
-            <input name="school" type="text" placeholder="Школа">
-            <input name="class" type="text" placeholder="Класс">
-            <button type="submit">Регистрация</button>
-        </form>
-    </article>
-    <footer class="main-footer">
-        <ul class="footer-nav">
-            <li class="footer-nav-item"><a href="#">О нас</a></li>
-            <li class="footer-nav-item"><a href="#">Контакты</a></li>
-            <li class="footer-nav-item"><a href="#">Материалы</a></li>
-            <li class="footer-nav-item"><a href="#">Вопросы-ответы</a></li>
-        </ul>
-    </footer>
+    <main>
+        <header class="pages-header">
+            <nav class="pages-header-nav">
+                <a class="logo" href="index.html">
+                    <img class="logo-img" src="img/logo.svg" alt="Логотип сайта Кот да Винчи">
+                    <h2 class="logo-name">Кот да Винчи</h2>
+                </a>
+            </nav>
+        </header>
+        <article class="registration">
+            <h1>Регистрация</h1>
+            <form action="/" method="POST" name="registration">
+                <input name="login" type="text" placeholder="Логин">
+                <input name="password" type="password" placeholder="Пароль">
+                <input name="email" type="email" placeholder="Email">
+                <input name="surname" type="text" placeholder="Фамилия">
+                <input name="name" type="text" placeholder="Имя">
+                <input name="patronymic" type="text" placeholder="Отчество">
+                <input name="city" type="text" placeholder="Город">
+                <input name="school" type="text" placeholder="Школа">
+                <input name="class" type="text" placeholder="Класс">
+                <a href="variants.html">
+                    <button type="submit">Регистрация</button>
+                </a>
+            </form>
+        </article>
+        <footer class="main-footer">
+            <ul class="footer-nav">
+                <li class="footer-nav-item"><a href="#">О нас</a></li>
+                <li class="footer-nav-item"><a href="#">Контакты</a></li>
+                <li class="footer-nav-item"><a href="#">Материалы</a></li>
+                <li class="footer-nav-item"><a href="#">Вопросы-ответы</a></li>
+            </ul>
+        </footer>
+        <script src="js/registration.js" rel="script"></script>
+    </main>
 </body>
 </html>
