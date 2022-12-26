@@ -491,6 +491,15 @@ div.screen {
     border: 0;
 }
 
+.check-answer__button:hover {
+    opacity: 0.7;
+}
+
+.check-answer__button:active {
+    opacity: 0.5;
+}
+
+
 .variant-task {
     border-bottom: 3px solid #84CAFF;
 }
