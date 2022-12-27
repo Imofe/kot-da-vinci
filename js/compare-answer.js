@@ -1,6 +1,6 @@
 const replyButtons = document.querySelectorAll('.check-answer__button');
 
-var answers = {
+const ANSWERS = {
     '1': '58',
     '2': 'yxzw',
     '3': '355',
@@ -68,14 +68,14 @@ var answers = {
 // varButton.addEventListener('click', addAnswers);
 
 
-for (index = 0; index < replyButtons.length; index++) {
-    currentButton = replyButtons[index];
+for (let index = 0; index < replyButtons.length; index++) {
+    const currentButton = replyButtons[index];
     currentButton.addEventListener('click', function (event) {
-        var target = event.target;
-        var answerId = target.closest('li').id;
-        var answer = document.getElementById(`t-${answerId}`).value;
+        const target = event.target;
+        const answerId = target.closest('li').id;
+        const answer = document.getElementById(`t-${answerId}`).value;
 
-        if (answers[answerId] == answer) {
+        if (ANSWERS[answerId] === answer) {
             document.getElementById(`t-${answerId}`).style.background = 'rgb(60, 179, 113, 0.7)';
         } else {
             document.getElementById(`t-${answerId}`).style.background = 'rgb(179, 60, 67, 0.7)';

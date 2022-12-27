@@ -93,7 +93,7 @@ a.logo {
     margin: 0 auto;
     padding-top: 66px;
     padding-bottom: 84px;
-    max-width: 470px;
+    max-width: 500px;
 
     display: flex;
     flex-direction: column;
@@ -135,6 +135,22 @@ input::placeholder {
 
     width: 267px;
     height: 55px;
+
+    background-color: #1570EF;
+    border: 0;
+
+    color: #FFF;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.main-login form button:hover {
+    opacity: .7;
+}
+
+.main-login form button:active {
+    opacity: .5;
 }
 
 /* ABOUT */
@@ -324,7 +340,7 @@ div.screen {
 /* VARIANTS =========================================================*/
 
 .variants_types {
-    max-width: 1680px;
+    max-width: 1550px;
     margin: 0 auto;
 }
 
@@ -443,7 +459,7 @@ div.screen {
 /* VARIANT ========================================================= */
 
 .variant {
-    max-width: 1680px;
+    max-width: 1550px;
     margin: 30px auto 180px;
 
     border: 1px solid #DCDCDC;
@@ -520,16 +536,15 @@ div.screen {
 }
 
 .task-wrapper {
-    max-width: 1540px;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
 }
 
-.task-wrapper:before {
+.task-wrapper .number {
     position: absolute;
-    left: -40px;
+    left: -60px;
     font-size: 40px;
-    content: "1.";
 }
 
 .expression {
