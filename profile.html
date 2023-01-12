@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Личный кабинет</title>
+</head>
+<body>
+<header class="pages-header">
+  <nav class="pages-header-nav">
+    <a class="logo" href="index.html">
+      <img class="logo-img" src="img/logo.svg" alt="Логотип сайта Кот да Винчи">
+      <h2 class="logo-name">Кот да Винчи</h2>
+    </a>
+    <div class="user-info">
+      <img src="img/pudge.jpg" alt="Ваш аватар" width="75" height="75">
+      <div class="pages-header-stats">
+        <p class="user-info-happiness">Настроение: <span class="user-info-happiness__amount">123 XP</span></p>
+        <div class="user-info-happiness__level"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+<section class="personal-information">
+  <h1>Личная информация</h1>
+  <div class="information-body">
+    <div class="img-container container">
+      <img src="img/pudge.jpg" alt="Ваш аватар" width="170" height="170">
+    </div>
+    <div class="first-info-container container">
+      <h2>Общая информация</h2>
+      <div class="info-item">
+        <p class="field">Фамилия:</p>
+        <input class="field-input" placeholder="-" name="surname">
+      </div>
+      <div class="info-item">
+        <p class="field">Имя:</p>
+        <input class="field-input" placeholder="-" name="name">
+      </div>
+      <div class="info-item">
+        <p class="field">Отчество:</p>
+        <input class="field-input" placeholder="-" name="patronymic">
+      </div>
+      <div class="info-item">
+        <p class="field">Город:</p>
+        <input class="field-input" placeholder="-" name="city">
+      </div>
+    </div>
+    <div class="second-info-container container">
+      <h2>Контактные данные</h2>
+      <div class="info-item">
+        <p class="field">Email:</p>
+        <input class="field-input field-input-email" placeholder="-" name="email">
+      </div>
+      <h2>Образование</h2>
+      <div class="info-item">
+        <p class="field">Школа:</p>
+        <input class="field-input" placeholder="-" name="school">
+      </div>
+      <div class="info-item">
+        <p class="field">Класс:</p>
+        <input class="field-input" placeholder="-" name="class">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cat">
+  <div class="main-cat">
+    <img src="img/half-cat.png" width="308" height="372">
+  </div>
+  <div class="chill-cat">
+    <div class="polz">
+      <img src="img/polzunok.png" width="574" height="60">
+    </div>
+    <div class="cat-button">
+      <div class="fish cat-button-item">
+        <img src="img/fish.png" width="120" height="120">
+      </div>
+      <div class="dush cat-button-item">
+        <img src="img/dush.png" width="120" height="120">
+      </div>
+      <div class="house cat-button-item">
+        <img src="img/cat-house.png" width="120" height="120">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="variants_types cat-types">
+  <ul class="variants_types_list cat-list">
+    <li class="variants_types_list-item active numbers cat-list-item">Задания по вариантам</li>
+    <li class="variants_types_list-item themes cat-list-item">Задания по темам</li>
+    <li class="variants_types_list-item prepared cat-list-item">Варианты</li>
+  </ul>
+</section>
+<script src="js/users-info.js" type="module"></script>
+</body>
+</html>
