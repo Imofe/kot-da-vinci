@@ -559,3 +559,13 @@ div.screen {
 .medium {
     font-weight: 500;
 }
+
+sup {
+    vertical-align: super;
+    font-size: 24px;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 24px;
+}
