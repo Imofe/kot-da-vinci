@@ -133,16 +133,25 @@ input::placeholder {
 .main-login form button {
     margin: 73px 0 0;
 
-    width: 267px;
-    height: 55px;
+    width: 400px;
+    height: 200px;
 
     background-color: #1570EF;
     border: 0;
+    border-radius: 10px;
 
     color: #FFF;
     font-weight: 400;
     font-size: 32px;
     line-height: 37px;
+}
+
+.main-login form button a {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 37px;
+    text-decoration: none;
 }
 
 .main-login form button:hover {
@@ -402,7 +411,7 @@ div.screen {
     content: url("../img/variants_list_prepared.svg");
 }
 
-.variants {
+.variants, section.numbers {
     max-width: 1550px;
     margin: 30px auto 660px;
 
@@ -410,7 +419,7 @@ div.screen {
     border-radius: 10px;
 }
 
-.variants h1, .variant h1 {
+.variants h1, .variant h1, section.numbers h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 82px;
@@ -568,4 +577,197 @@ sup {
 sub {
     vertical-align: sub;
     font-size: 24px;
+}
+
+.numbers_list {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.numbers_list-item {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 35px 0 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+
+    border-bottom: 1px solid rgba(17, 43, 102, 0.2);
+}
+
+.numbers_list-item:last-child {
+    border: 0;
+}
+
+.numbers_list-item button {
+    width: 250px;
+    height: 55px;
+
+    background-color: #53B1FD;
+}
+
+.numbers_list-item button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+/* information user */
+
+.personal-information {
+    max-width: 1200px;
+    margin: 70px auto 115px;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+.personal-information h1 {
+
+    font-family: 'Open Sans', "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 61.28px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.information-body {
+    display: flex;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.first-info-container {
+    margin-left: 89px;
+}
+.container h2 {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46.88px;
+    margin-bottom: 25px;
+}
+
+.container .field {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 42.19px;
+    opacity: 0.8;
+    padding-right: 10px;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.info-item:last-child{
+    margin-bottom: 135px;
+}
+
+.field-input {
+    width: 310px;
+    height: unset;
+
+    background-color: white;
+    border: 0;
+
+    font-weight: 400;
+    font-size: 27px;
+    text-align: start;
+    color: #112B66;
+
+    margin: 0;
+    padding: 0;
+}
+
+.img-container {
+    padding-left: 35px;
+}
+
+.img-container img {
+    border-radius: 60%;
+}
+
+.field-input-email {
+    width: 346px;
+}
+
+.cat {
+    max-width: 1200px;
+    margin: 70px auto 115px;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 52px;
+    margin-bottom: 30px;
+}
+
+.main-cat {
+    background-color: #D1E9FF4D;
+    width: 500px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: 55px;
+    border-radius: 1%;
+}
+
+.main-cat img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.chill-cat {
+    margin-top: 155px;
+    margin-right: 50px;
+}
+
+.cat-button {
+    display: flex;
+    gap: 40px;
+}
+
+.cat-button-item {
+    background-color: #D1E9FF4D;
+    width: 165px;
+    height: 140px;
+}
+
+.cat-button-item img {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.polz {
+    margin-bottom: 85px;
+}
+
+.cat-types {
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+.cat-list-item {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 330px;
+    height: 120px;
+    border: 5px solid #53B1FD;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+
+    margin-right: 25px;
 }
