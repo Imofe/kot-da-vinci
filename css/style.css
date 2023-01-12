@@ -462,8 +462,6 @@ div.screen {
     max-width: 1550px;
     margin: 30px auto 180px;
 
-    border: 1px solid #DCDCDC;
-    border-radius: 10px;
 }
 
 .variant-tasks {
@@ -471,6 +469,9 @@ div.screen {
     font-size: 32px;
     line-height: 38px;
     color: #000;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
 }
 
 .variant-tasks p {
@@ -494,9 +495,11 @@ div.screen {
 }
 
 .check-answer__button {
-    width: 250px;
-    height: 66px;
-    margin-left: 20px;
+    width: 360px;
+    height: 65px;
+    display: block;
+
+    margin: 140px auto 0;
 
     background-color: #53B1FD;
 
@@ -522,7 +525,7 @@ div.screen {
 
 .variant-task:last-child {
     border: 0;
-    margin-bottom: 170px;
+    margin-bottom: 50px;
 }
 
 .variant-task a {
