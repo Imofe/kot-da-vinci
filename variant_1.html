@@ -15,7 +15,9 @@
             <h2 class="logo-name">Кот да Винчи</h2>
         </a>
         <div class="user-info">
-            <img src="img/avatar.jpg" alt="Ваш аватар" width="75">
+            <a href="profile.html">
+                <img src="img/pudge.jpg" alt="Ваш аватар" width="75" height="75">
+            </a>
             <div class="pages-header-stats">
                 <p class="user-info-happiness">Настроение: <span class="user-info-happiness__amount">123 XP</span></p>
                 <div class="user-info-happiness__level"></div>
@@ -24,7 +26,7 @@
     </nav>
 </header>
 <main>
-    <section class="variants_types">
+    <section class="variants_types" id="1">
         <ul class="variants_types_list">
             <li class="variants_types_list-item numbers"><a href="numbers.html">Задания по номерам</a></li>
             <li class="variants_types_list-item themes"><a href="themes.html">Задания по темам</a></li>
@@ -33,7 +35,7 @@
     </section>
     <article class="variant" id="1">
         <h1>Вариант 1</h1>
-        <form action="#" method="get" name="v1" id="v1">
+        <form action="result.html" method="get" name="v1" id="v1">
             <ul class="variant-tasks">
                 <li class="variant-task" >
                     <div class="task-wrapper">
@@ -394,6 +396,7 @@
         </ul>
     </footer>
 </main>
-<script src="js/compare-answer.js" type="module"></script>
+<script src="js/add-answer.js" type="module"></script>
+<script src="js/get-result.js" type="module"></script>
 </body>
 </html>
