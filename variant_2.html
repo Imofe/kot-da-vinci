@@ -15,7 +15,9 @@
             <h2 class="logo-name">Кот да Винчи</h2>
         </a>
         <div class="user-info">
-            <img src="img/avatar.jpg" alt="Ваш аватар" width="75">
+            <a href="profile.html">
+                <img src="img/pudge.jpg" alt="Ваш аватар" width="75" height="75">
+            </a>
             <div class="pages-header-stats">
                 <p class="user-info-happiness">Настроение: <span class="user-info-happiness__amount">123 XP</span></p>
                 <div class="user-info-happiness__level"></div>
@@ -24,7 +26,7 @@
     </nav>
 </header>
 <main>
-    <section class="variants_types">
+    <section class="variants_types" id="2">
         <ul class="variants_types_list">
             <li class="variants_types_list-item active numbers">Задания по вариантам</li>
             <li class="variants_types_list-item themes">Задания по темам</li>
@@ -33,7 +35,7 @@
     </section>
     <article class="variant">
         <h1>Вариант 2</h1>
-        <form action="#" method="get" name="v2" id="v2">
+        <form action="result.html" method="get" name="v2" id="v2">
             <ul class="variant-tasks">
                 <li class="variant-task" id="v2t1">
                     <div class="task-wrapper">
@@ -42,7 +44,7 @@
                             Так как таблицу и схему рисовали независимо друг от друга, то нумерация объектов в таблице никак не связана с буквенными обозначениями на графе.
                             Определите длину кратчайшего пути между пунктами В и Е. Передвигаться можно только по указанным дорогам.</p>
                         <img src="img/variant_2/task1.png" alt="Изображение к заданию 1">
-                        <input type="text" id="t-v2t1">
+                        <input type="text" id="v2t1">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t2">
@@ -56,7 +58,7 @@
                             разделителей между буквами ставить не нужно.<br>Пример. Функция задана выражением ¬x \/ y, зависящим от двух переменных, а фрагмент таблицы имеет следующий вид.</p>
                         <img src="img/variant_2/task2-2.png" alt="Изображение к заданию 2">
                         <p>В этом случае первому столбцу соответствует переменная y, а второму столбцу – переменная x. В ответе следует написать yx.</p>
-                        <input type="text" id="t-v2t2">
+                        <input type="text" id="v2t2">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t3">
@@ -73,7 +75,7 @@
                         <p>На рисунке приведена схема указанной базы данных.</p>
                         <img src="img/variant_2/task3-4.png" alt="Изображение к заданию 3">
                         <p>Используя информацию из приведённой базы данных, ответьте на вопрос: Сколько минут длится самый короткий фильм в жанре Комедия? В ответ запишите целую часть числа.</p>
-                        <input type="text" id="t-v2t3">
+                        <input type="text" id="v2t3">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t4">
@@ -82,7 +84,7 @@
                         <p>В сообщении встречается 50 букв А, 30 букв Б, 20 букв В и 5 букв Г. При его
                             передаче использован неравномерный двоичный префиксный код, который
                             позволил получить минимальную длину закодированного сообщения.<br>Какова она в битах?</p>
-                        <input type="text" id="t-v2t4">
+                        <input type="text" id="v2t4">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t5">
@@ -106,7 +108,7 @@
                             счисления больше 17 и которое может являться результатом работы алгоритма.<br>
                             В ответе запишите сумму всех цифр этого числа в двоичной системе счисления.
                         </p>
-                        <input type="text" id="t-v2t5">
+                        <input type="text" id="v2t5">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t6">
@@ -129,7 +131,7 @@
                         <p>Сколько раз черепаха пройдет через начало координат? Факт положения
                             черепахи в начале координат перед выполнением алгоритма за прохождение
                             не считать.</p>
-                        <input type="text" id="t-v2t6">
+                        <input type="text" id="v2t6">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t7">
@@ -142,7 +144,7 @@
                             содержащую 64 цвета. Средний размер документа, отсканированного с
                             изменёнными параметрами, составляет 96 Кбайт. Определите количество
                             цветов в палитре до оптимизации.</p>
-                        <input type="text" id="t-v2t7">
+                        <input type="text" id="v2t7">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t8">
@@ -152,7 +154,7 @@
                             системе счисления, которые не начинаются с нечетных цифр, не
                             оканчиваются цифрами 1 или 8, а также содержат в своей записи не более
                             одной цифры 3.</p>
-                        <input type="text" id="t-v2t8">
+                        <input type="text" id="v2t8">
                     </div>
                 </li>
                 <li class="variant-task" id="v2t9">
@@ -525,6 +527,6 @@
         </ul>
     </footer>
 </main>
-<script src="js/compare-answer.js" type="module"></script>
+<script src="js/add-answer.js" type="module"></script>
 </body>
 </html>

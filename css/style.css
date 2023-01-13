@@ -771,3 +771,47 @@ sub {
 
     margin-right: 25px;
 }
+
+.itogi-body {
+    max-width: 1800px;
+    margin: 70px auto 115px;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+.itogi-body h1 {
+    font-family: 'Open Sans', "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 61.28px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 80px;
+}
+
+table  {
+    border-collapse: collapse;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+  
+td, th {
+    border: 1px solid #ddd;
+    padding: 36px 200px;
+    font-size: 20px;
+    line-height: 17px;
+}
+
+.itogi-container p {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.result-page {
+    max-width: 1800px;
+}

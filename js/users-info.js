@@ -1,5 +1,7 @@
 const inputs = document.querySelectorAll('.field-input');
 
+
+
 function changeHandler () {
     localStorage.setItem(this.name, this.value);
 }
