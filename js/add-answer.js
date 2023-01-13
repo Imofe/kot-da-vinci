@@ -1,5 +1,5 @@
 const inputField = document.getElementsByTagName('input');
-const varNumber = document.querySelector('.variants_types').id;
+const varNumber = document.querySelector('.variant').id;
 
 function attachEvents () {
     for (let index = 0; index < inputField.length; index++) {
