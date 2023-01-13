@@ -366,15 +366,25 @@ div.screen {
     max-width: 330px;
     height: 140px;
     border: 5px solid #53B1FD;
-    opacity: .8;
+    opacity: .7;
     display: flex;
     align-items: center;
 
     margin-right: 25px;
 }
 
+.variants_types_list-item:hover {
+    opacity: .9;
+}
+
+.variants_types_list-item a {
+    text-decoration: none;
+    color: #112B66;
+}
+
 .variants_types_list-item.active {
     border: 5px solid #008cff;
+    opacity: 1;
 }
 
 .variants_types_list-item:last-child {
