@@ -164,7 +164,7 @@ input::placeholder {
 
 /* ABOUT */
 
-.about {
+.main-about {
     display: flex;
     align-items: center;
     max-width: 1720px;
@@ -172,11 +172,11 @@ input::placeholder {
     margin: 170px auto;
 }
 
-.about:last-child {
+.main-about:last-child {
     flex-direction: row-reverse;
 }
 
-.about p {
+.main-about p {
     font-weight: 600;
     font-size: 40px;
     line-height: 47px;
@@ -184,12 +184,12 @@ input::placeholder {
     margin-bottom: 50px;
 }
 
-.about img {
+.main-about img {
     display: block;
     margin-right: 150px;
 }
 
-.about:last-child img {
+.main-about:last-child img {
     margin-right: 0;
     margin-left: 150px;
 
@@ -198,7 +198,7 @@ input::placeholder {
     background-position: center;
 }
 
-.about p:last-child {
+.main-about p:last-child {
     display: flex;
     align-items: center;
     margin: 0;
@@ -701,6 +701,10 @@ sub {
 
 .img-container {
     padding-left: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-container img {
@@ -808,7 +812,7 @@ table  {
     margin-right: 25px;
     margin-bottom: 50px;
 }
-  
+
 td, th {
     border: 1px solid #ddd;
     padding: 36px 200px;
@@ -824,4 +828,196 @@ td, th {
 
 .result-page {
     max-width: 1800px;
+}
+
+.solved_tasks-counter {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.filler-wrapper {
+    position: relative;
+    background-image: url("../img/filler.png");
+    background-repeat: no-repeat;
+    width: 681px;
+    height: 60px;
+}
+
+.fill {
+    /*display: inline;*/
+    background-color: #84CAFF;
+    height: 50px;
+    max-width: 98.5%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* ABOUT */
+
+.about {
+    max-width: 1670px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+
+    padding: 0 100px 80px 120px;
+    margin: 0 auto 40px;
+}
+
+.about h1, .materials h1, .contacts h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+    text-align: center;
+
+    padding-top: 35px;
+    padding-bottom: 25px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.about h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.about h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.about_list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 145px;
+    justify-content: space-between;
+}
+
+.about_list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 630px;
+
+    margin-bottom: 145px;
+}
+
+.about_list-item img {
+    margin-bottom: 5px;
+}
+
+.about_list-item p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+
+    margin-top: 55px;
+}
+
+/* MATERIAL */
+
+.materials {
+    max-width: 1670px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+
+    margin: 0 auto 180px;
+}
+
+.materials, .materials a {
+    color: #112B66;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.materials a:hover {
+    opacity: .7;
+}
+
+.materials a:active {
+    opacity: .5;
+}
+
+.materials ul {
+    margin-bottom: 65px;
+}
+
+.materials ul:last-child {
+    margin-bottom: 270px;
+}
+
+.materials-wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* CONTACTS */
+
+.contacts {
+    max-width: 1465px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+
+    margin: 0 auto 180px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.contacts-wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.contacts p {
+    margin-bottom: 65px;
+}
+
+.contacts p:last-child {
+    margin-bottom: 80px;
+}
+
+.contacts-list_item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 45px;
+}
+
+.contacts-list_item img {
+    margin-right: 40px;
+}
+
+.contacts-list_item a {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #112B66;
+
+    display: inline;
+    margin-left: 15px;
+}
+
+.contacts-list_item a:hover {
+    opacity: .7;
+}
+
+.contacts-list_item a:active {
+    opacity: .5;
 }

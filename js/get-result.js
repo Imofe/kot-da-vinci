@@ -1,9 +1,9 @@
 import { ANSWERS } from "./Answers.js";
 const TASK_COUNT = 27;
 
-var varNumber = localStorage.getItem('varNumber');
+let varNumber = localStorage.getItem('varNumber');
 
-function myAnswer () {
+    function myAnswer () {
     for (let i = 1; i <= TASK_COUNT; i++) {
         let ans = localStorage.getItem(`v${varNumber}t${i}`);
         if (ans === null) {
@@ -25,11 +25,12 @@ function compareAnswer () {
     for (let i = 1; i <= TASK_COUNT; i++) {
         if (document.getElementById(`1-${i}`).textContent === document.getElementById(`2-${i}`).textContent) {
             counter += 1;
+            localStorage.solvedQuestions = parseInt(localStorage.solvedQuestions) + 1;
         }
         localStorage.removeItem(`v${varNumber}t${i}`);
     }
 
-    document.querySelector('.count-point').innerHTML = `Количество баллов: ${counter}`;
+    document.querySelector('.count-point').innerHTML = `Количество верно решенных заданий: ${counter}`;
 }
 
 myAnswer();
